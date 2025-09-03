@@ -1,0 +1,24 @@
+{
+  "name": "rename-file-prepend-date",
+  "version": "0.1.0",
+  "description": "Obsidian plugin to prepend a date to the current file name.",
+  "author": "Sparsh Yadav",
+  "license": "MIT",
+  "main": "main.js",
+  "scripts": {
+    "dev": "node esbuild.config.mjs --watch",
+    "build": "node esbuild.config.mjs --prod",
+    "clean": "rm -f main.js main.js.map",
+    "bump": "node scripts/bump-manifest-version.mjs --write",
+    "release": "npm run bump && git add manifest.json versions.json && git commit -m 'chore: bump manifest for release' || true"
+  },
+  "devDependencies": {
+    "@types/node": "^22.7.4",
+    "esbuild": "^0.23.0",
+    "typescript": "^5.6.3"
+  },
+  "dependencies": {
+    "obsidian": "^1.5.8"
+  }
+}
+

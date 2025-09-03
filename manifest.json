@@ -1,0 +1,12 @@
+{
+  "id": "rename-file-prepend-date",
+  "name": "Rename File: Prepend Date",
+  "version": "0.1.0",
+  "minAppVersion": "1.5.0",
+  "description": "Rename the current note by prepending a configurable date string.",
+  "author": "Sparsh Yadav",
+  "authorUrl": "https://",
+  "isDesktopOnly": false,
+  "main": "main.js"
+}
+
